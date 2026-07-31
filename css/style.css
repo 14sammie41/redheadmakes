@@ -1,0 +1,42 @@
+:root {
+    /* Brand Colors */
+    --clr-primary: #D9CFFB;
+    --clr-secondary: #FADADD;
+    --clr-font: #010101;
+    --clr-font-secondary: #6A6A6A;
+    --clr-background: #F8F7F4;
+    --clr-highlight: #FF2D55;
+
+    /* Typography */
+    --font-accent: 'great-vibes', cursive;
+    --font-main: 'playfair-display', serif;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+}
+
+/* Header Styling */
+header {
+    background-color:var(--clr-primary);
+    padding:var(--space-md);
+    text-align:center;
+}
+
+h1 {
+    font-family:var(--font-accent);
+    color:var(--clr-font);
+}
+
+h2 {
+    font-family:var(--font-main);
+    color:var(--clr-font);
+}
+
+h3 {
+    font-family:var(--font-main);
+    color:var(--clr-font-secondary);
+}
