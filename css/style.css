@@ -8,8 +8,8 @@
     --clr-highlight: #FF2D55;
 
     /* Typography */
-    --font-accent: 'great-vibes', cursive;
-    --font-main: 'playfair-display', serif;
+    --font-accent: 'Great Vibes', cursive;
+    --font-main: 'Playfair Display', serif;
 
     /* Spacing */
     --space-xs: 0.25rem;
@@ -17,26 +17,58 @@
     --space-md: 1rem;
     --space-lg: 2rem;
     --space-xl: 4rem;
+
+    /* Font Sizes */
+    --fs-xs: 0.75rem;   /* Tiny text */
+    --fs-sm: 0.875rem;  /* Small text */
+    --fs-md: 1rem;      /* Normal body text */
+    --fs-lg: 1.25rem;   /* Subheadings */
+    --fs-xl: 2rem;   /* Headings */
+    --fs-xxl: 3rem;   /* Statements or large headings */
+    --fs-xxxl: 4rem;  /* Hero text or main statements */
+
+}
+
+html {
+    font-size: 20px; /* Base font size for rem calculations */
 }
 
 /* Header Styling */
 header {
     background-color:var(--clr-primary);
-    padding:var(--space-md);
     text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+}
+
+.logo-text h1,
+.logo-text h2 {
+    line-height: 0.8;
+    margin: 0.5;
+}
+
+header h3 {
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 h1 {
-    font-family:var(--font-accent);
+    font-family: var(--font-accent);
     color:var(--clr-font);
+    font-size:var(--fs-xxxl);
 }
 
 h2 {
     font-family:var(--font-main);
     color:var(--clr-font);
+    font-size:var(--fs-md);
 }
 
 h3 {
     font-family:var(--font-main);
     color:var(--clr-font-secondary);
+    font-size:var(--fs-sm);
 }
